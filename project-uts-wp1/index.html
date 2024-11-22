@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Bakery</title>
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Lavishly+Yours&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="text-center">
+            <h1>Welcome to Sunday Bakery</h1>
+            <p>Enjoy your Sunday with a fine bread of your choices!</p>
+            <button class="btn store-btn mt-5" onclick="toLogin()">Go to store</button>
+        </div>
+    </header>
+
+    <article class="container">
+        <section class="row justify-content-evenly mt-5 description">
+            <div class="col-6 text-center">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dignissimos facere quaerat fugit 
+                    minima nam a expedita quia libero! Et itaque quaerat deleniti enim, vitae nulla unde aut dolor obcaecati.</p>
+            </div>
+
+            <div class="col-6">
+                <img src="img\bake1.png" class="img-fluid rounded" style="width: 90%;" alt="">
+            </div>
+        </section>
+
+        <section class="row justify-content-evenly mt-5 description">
+            <div class="col-6">
+                    <img src="img\bakeries2.png" class="img-fluid rounded" style="width: 90%;" alt="">
+                </div>
+            </div>
+
+            <div class="col-6 text-center">
+                <h3>Our products</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dignissimos facere quaerat fugit 
+                    minima nam a expedita quia libero! Et itaque quaerat deleniti enim, vitae nulla unde aut dolor obcaecati.</p>
+            </div>
+        </section>
+    </article>
+
+    <footer class="footer">
+        <div class="text-center">
+            <p>&copy;Copyright by Davin Albar Pratama TIF RP 22 CID</p>
+        </div>
+    </footer>
+
+    <script>
+        function toLogin(){
+            window.location.href="login.html";
+        }
+    </script>
+</body>
+</html>

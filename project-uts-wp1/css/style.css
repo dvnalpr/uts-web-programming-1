@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.header {
+    background-image: url("/img/sundayShop.webp");
+    background-size: cover;
+    color: white;
+    width: 100%;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Lavishly Yours", cursive;
+    color: #ffc987;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.store-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.store-btn:hover {
+    background-color: #e55d50;
+}
+
+.description h3{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Lavishly Yours", cursive;
+    color: #ffc987;
+    margin-bottom: 20px;
+}
+
+section{
+    padding: 50px 0px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+section img {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 100px;
+}
+.footer p {
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+.body-bg {
+    background-image: url("/img/sundayShop.webp");
+    background-size: cover;
+    background-position:center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.btn-primary {
+    background-color: #f7a747;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f79c2e;
+}
+
+.card-body h1 {
+    font-family: "Lavishly Yours", cursive;
+    color: #ffc987;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.question a {
+    color: #ffc987;
+}
+
+.pr-cat {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Lavishly Yours", cursive;
+    color: #ffc987;
+}
+
+.navbar {
+    background-color:#ffc987;
+}
+
+.storename {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Lavishly Yours", cursive;
+    color: #ffffff;
+}
+
+.storename:hover {
+    color: #fdfdfd;
+}
+
+.btn-logout {
+    color: #ffffff;
+}
+
+.btn-logout:hover {
+    color: #fdfdfd;
+}
+
+.btn-add {
+    color: #f7a747;
+    transition: background-color 0.3s ease;
+}
+.btn-add:hover {
+    color: #f79c2e;
+}
+
+.product-detail {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+.product-detail img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.btn-back {
+    margin-top: 20px;
+}

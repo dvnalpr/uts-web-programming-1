@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Bakery Register</title>
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Lavishly+Yours&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-bg">
+    <section class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        <div class="card p-4 shadow-lg" style="width: 100%; max-width: 400px; border-radius: 10px;">
+            <div class="card-body">
+                <h1 class="text-center mb-4">Register</h1>
+                <form id="registerForm">
+                    <!-- Username Field -->
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" id="username" class="form-control" placeholder="Enter your username" required>
+                    </div>
+                    <!-- Password Field -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100 mt-5">Register</button>
+                    <div class="text-center mt-3 question">
+                        <p>Already have an account? <a href="login.html">Login</a> </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="text-center">
+            <p>&copy;Copyright by Davin Albar Pratama TIF RP 22 CID</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (username === "" || password === "") {
+                alert('Please fill in both fields.');
+                return;
+            }
+
+            // Fetch existing users from localStorage or initialize an empty array
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+
+            // Check if the username already exists
+            const userExists = users.some(user => user.username === username);
+
+            if (userExists) {
+                alert('Username is already taken. Please choose another.');
+                return;
+            }
+
+            // Add the new user to the users array
+            users.push({ username, password });
+
+            // Store the updated users array back into localStorage
+            localStorage.setItem('users', JSON.stringify(users));
+
+            alert('Registration successful! Redirecting to login page.');
+
+            // Redirect to login page
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>
